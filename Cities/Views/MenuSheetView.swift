@@ -105,6 +105,7 @@ private extension MenuSheetView {
                         }
                     }
                     .padding(.horizontal, (geo.size.width - Constants.Sizes.itemWidth) / 2)
+                    .padding(.vertical)
                 }
                 .onAppear {
                     scrollProxy.scrollTo(listVM.currentIndex, anchor: .center)
